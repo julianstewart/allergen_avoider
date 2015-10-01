@@ -95,8 +95,8 @@
             $result = Restaurant::getAll();
 
 
+
             //assert
-            $result = Restaurant::getAll();
             $this->assertEquals([$test_restaurant, $test_restaurant2], $result);
         }
 
