@@ -1,4 +1,5 @@
 <?php
+
     /**
     * @backupGlobals disabled
     * @backupStatic Attributes disabled
@@ -144,13 +145,6 @@
             //assert
             $this->assertEquals([$test_restaurant, $test_restaurant2], $result);
         }
-
-
     }
 
-
-
-
-
-
- ?>
+?>

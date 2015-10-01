@@ -15,7 +15,6 @@
         function getName()
         {
             return $this->name;
-
         }
 
         function setName($new_name)
@@ -63,7 +62,7 @@
             $returned_allergies = $GLOBALS['DB']->query("SELECT * FROM allergens;");
             //lower table name only
             $allergies = array();
-            foreach($returned_allergies as $allergy){
+            foreach($returned_allergies as $allergy) {
                 $name = $allergy['name'];
                 $id = $allergy['id'];
                 $new_allergy = new Allergen($name, $id);
@@ -76,12 +75,6 @@
         {
             $GLOBALS['DB']->exec("DELETE FROM allergens;");
         }
-
-
-
-
     }
-
-
 
  ?>

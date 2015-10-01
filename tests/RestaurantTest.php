@@ -8,7 +8,6 @@
     require_once "src/Allergen.php";
     require_once "src/Restaurant.php";
 
-
     $server = 'mysql: host= localhost; dbname=allergen_avoider_test';
     $username = 'root';
     $password = 'root';
@@ -120,4 +119,5 @@
             $this->assertEquals([], $result);
         }
      }
+
  ?>
